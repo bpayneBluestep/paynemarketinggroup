@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payne Marketing Group | Technology Consulting</title>
+<meta name="description" content="Payne Marketing Group is a Utah-based technology consulting firm providing software engineering, implementation and systems consulting on monthly retainers.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231b3a5c'/><text x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14202e;
+    --muted: #5a6776;
+    --line: #e3e7ec;
+    --bg: #ffffff;
+    --soft: #f5f7f9;
+    --brand: #1b3a5c;
+    --accent: #c8873a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Inter, system-ui, -apple-system, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; font-size: 17px; }
+  a { color: var(--brand); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .logo { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 20px; color: var(--brand); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav a { margin-left: 28px; color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; }
+  nav a:hover { color: var(--ink); }
+
+  .hero { padding: 96px 0 88px; }
+  .eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 18px; }
+  h1 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(34px, 5vw, 54px); line-height: 1.12; max-width: 760px; letter-spacing: -.01em; }
+  .lede { margin-top: 22px; font-size: 19px; color: var(--muted); max-width: 620px; }
+  .btn { display: inline-block; margin-top: 34px; background: var(--brand); color: #fff; text-decoration: none; padding: 14px 26px; border-radius: 6px; font-weight: 600; font-size: 15px; }
+  .btn:hover { background: #142c47; }
+
+  section.band { background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 80px 0; }
+  h2 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 30px; margin-bottom: 36px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 28px; }
+  .card h3 { font-size: 17px; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 15.5px; }
+
+  .about { padding: 80px 0; display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start; }
+  .about p { color: var(--muted); margin-bottom: 16px; }
+  .facts { list-style: none; border-top: 1px solid var(--line); margin-top: 8px; }
+  .facts li { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+  .facts li span:first-child { color: var(--muted); }
+  .facts li span:last-child { font-weight: 500; }
+
+  .contact { background: var(--brand); color: #fff; padding: 72px 0; text-align: center; }
+  .contact h2 { margin-bottom: 12px; }
+  .contact p { color: #c9d5e2; }
+  .contact a.mail { display: inline-block; margin-top: 22px; color: #fff; font-size: 20px; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+
+  footer { padding: 28px 0; font-size: 13.5px; color: var(--muted); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+  @media (max-width: 800px) {
+    .grid { grid-template-columns: 1fr; }
+    .about { grid-template-columns: 1fr; gap: 24px; }
+    nav a:not(:last-child) { display: none; }
+    .hero { padding: 64px 0 56px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">Payne Marketing Group<span>.</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Technology consulting · Utah</div>
+      <h1>Software engineering and systems consulting for organizations that run on their software.</h1>
+      <p class="lede">We help healthcare and service organizations configure, extend and get more out of the platforms they depend on, on a simple monthly retainer.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="band" id="services">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Software engineering</h3>
+          <p>Custom features, integrations, reports and automations built on top of the systems you already use.</p>
+        </div>
+        <div class="card">
+          <h3>Implementation</h3>
+          <p>Setup, configuration, data migration and rollout, so a new system works the way your team actually works.</p>
+        </div>
+        <div class="card">
+          <h3>Ongoing consulting</h3>
+          <p>A dependable technical partner on retainer for fixes, improvements and the questions that come up every month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap about" id="about">
+    <div>
+      <h2>About</h2>
+      <ul class="facts">
+        <li><span>Founded</span><span>2019</span></li>
+        <li><span>Based in</span><span>Utah</span></li>
+        <li><span>Engagements</span><span>Monthly retainer</span></li>
+        <li><span>Principal</span><span>Brandon Payne</span></li>
+      </ul>
+    </div>
+    <div>
+      <p>Payne Marketing Group is a small, senior technology consultancy. We work directly with operators and leadership teams to turn workflow problems into software that fits, then stick around to keep it running well.</p>
+      <p>Most of our work is long-term: clients keep us on retainer because we understand both their operations and the technical side, and we ship.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p>Tell us what you're working on and we'll get back to you within one business day.</p>
+      <a class="mail" href="mailto:brandon@paynemarketinggroup.com">brandon@paynemarketinggroup.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Southern Utah Marketing Agency, LLC dba Payne Marketing Group</span>
+    <span>Utah</span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
